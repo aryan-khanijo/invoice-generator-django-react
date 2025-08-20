@@ -5,6 +5,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # Connect invoices app API to main project URLs
     path('api/', include('invoices.urls')),
 ]
 
